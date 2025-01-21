@@ -1,0 +1,13 @@
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul{
+    display: flex;
+   
+}
+
+nav ul li{
+    margin: 0 30px;
+}
