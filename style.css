@@ -180,12 +180,117 @@ header{
 }
 
 
+/* Stories part */
+
+.stories {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    
+}
+
+.stories h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 
 
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.story {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.story img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.story-content {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.story-content .date {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.date1{
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: aqua;
+    color: white;
+}
+
+.date2{
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(39, 207, 64);
+    color: white;
+}
+
+.date3{
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(169, 27, 197, 0.784);
+    color: white;
+}
+
+.date4{
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(39, 207, 64);
+    color: white;
+}
+
+.date5{
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(39, 207, 64);
+    color: white;
+}
 
 
+.story-content h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+}
 
+.btn3 {
+    margin-top: 2rem;
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
 
+.stories-grid {
+    grid-template-columns: 600px 250px 250px 250px 250px;
+}
 
 @media screen and (max-width:768px) {
     header{
@@ -213,6 +318,9 @@ header{
     }
     .carousel-btn{
         display: none;
+    }
+    .stories-grid {
+        grid-template-columns: repeat(1,240px) 240px;
     }
 
 }
