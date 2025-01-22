@@ -1,7 +1,7 @@
 header{
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 1rem 2rem;
     background: white;
     border-bottom: 3px solid orange;
@@ -73,7 +73,7 @@ header{
 
 .hero{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
     background-color: white;
@@ -120,7 +120,7 @@ header{
 
 .curriculum-cards{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 
@@ -179,7 +179,25 @@ header{
     cursor: pointer;
 }
 
+#card1{
+    background-color: rgba(29, 207, 238, 0.999);
+    opacity:60%;
+}
+#card2{
+    background-color: rgba(221, 255, 0, 0.97);
+    opacity:60%;
+}
+#r2{
+    color: orange;
+}
 
+#card3{
+    background-color: rgba(245, 15, 230, 0.97);
+    opacity:60%;
+}
+#r3{
+    color: purple;
+}
 /* Stories part */
 
 .stories {
@@ -292,6 +310,62 @@ header{
     grid-template-columns: 600px 250px 250px 250px 250px;
 }
 
+/* Footer part */
+footer {
+    background: #007bff;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo p {
+    max-width: 300px;
+    line-height: 1.4;
+}
+
+.footer-links ul {
+    padding: 0;
+    list-style: none;
+  
+}
+
+.footer-links ul li a {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin-right: 1rem;
+}
+
+#fl{
+    display: flex ;
+}
+
+#fp1{
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    
+}
+
 @media screen and (max-width:768px) {
     header{
         flex-direction: column;
@@ -323,4 +397,10 @@ header{
         grid-template-columns: repeat(1,240px) 240px;
     }
 
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
+
